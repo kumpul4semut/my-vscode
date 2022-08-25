@@ -19,21 +19,21 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 170,
+            "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///c%3A/laragon/www/drm",
-            "backupPath": "C:\\Users\\USER\\AppData\\Roaming\\Code\\Backups\\a0b81dc66f76198ad622b2ee8f2c2a07",
+            "folder": "file:///c%3A/laragon/www/azzana",
+            "backupPath": "C:\\Users\\USER\\AppData\\Roaming\\Code\\Backups\\44af536cf1e97cae4866c9d794cef4f9",
             "uiState": {
-                "mode": 0,
-                "x": 448,
-                "y": 156,
-                "width": 1024,
-                "height": 768
+                "mode": 1,
+                "x": -8,
+                "y": -8,
+                "width": 976,
+                "height": 1056
             }
         },
         "openedWindows": [
@@ -52,11 +52,11 @@
                 "folder": "file:///c%3A/laragon/www/azzana",
                 "backupPath": "C:\\Users\\USER\\AppData\\Roaming\\Code\\Backups\\44af536cf1e97cae4866c9d794cef4f9",
                 "uiState": {
-                    "mode": 0,
-                    "x": 448,
-                    "y": 156,
-                    "width": 1024,
-                    "height": 768
+                    "mode": 1,
+                    "x": -8,
+                    "y": -8,
+                    "width": 976,
+                    "height": 1056
                 }
             }
         ]
