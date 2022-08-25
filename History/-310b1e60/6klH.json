@@ -1,0 +1,206 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#29315A",
+          "foreground": "#BFA0FE",
+          "leading_diamond": "\ue0b6",
+          "properties": {
+            "style": "austin",
+            "threshold": 150
+          },
+          "style": "diamond",
+          "template": "{{ .FormattedMs }}",
+          "trailing_diamond": "\ue0b4 ",
+          "type": "executiontime"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#94D8E5",
+          "leading_diamond": "\ue0b6",
+          "properties": {
+            "display_host": true
+          },
+          "style": "diamond",
+          "template": "{{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }} \ufb8a {{ .HostName }}",
+          "trailing_diamond": "\ue0b4 ",
+          "type": "session"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "#29315A",
+          "foreground": "#CCCCC6",
+          "leading_diamond": "\ue0b6",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "diamond",
+          "template": "\uf74a {{ .Path }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "path"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#56C2D6",
+          "leading_diamond": " \ue0b6",
+          "style": "diamond",
+          "template": "{{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "git"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#BFA0FE",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "fetch_version": false
+          },
+          "style": "diamond",
+          "template": "\ue608 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "php"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#BFA0FE",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "diamond",
+          "template": "\ue70c {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "dotnet"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#FEED6C",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "diamond",
+          "template": "\uf81f {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "python"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#94D8E5",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "diamond",
+          "template": "\ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "go"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#82B414",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "diamond",
+          "template": "\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "node"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#F92672",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "diamond",
+          "template": "\ue791 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "ruby"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#F92672",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "diamond",
+          "template": "\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "java"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#BFA0FE",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "diamond",
+          "template": "\ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "trailing_diamond": "\ue0b4",
+          "type": "julia"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#BFA0FE",
+          "foreground_templates": [
+            "{{ if eq \"Full\" .State.String }}#82B414{{ end }}",
+            "{{ if eq \"Charging\" .State.String }}#56C2D6{{ end }}",
+            "{{ if eq \"Discharging\" .State.String }}#F92672{{ end }}"
+          ],
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "charged_icon": "\uf578 ",
+            "charging_icon": "\uf583 ",
+            "discharging_icon": "\uf582 "
+          },
+          "style": "diamond",
+          "template": "{{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "battery"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#FD971F",
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "time_format": "15:04"
+          },
+          "style": "diamond",
+          "template": "\uf64f {{ .CurrentDate | date .Format }} ",
+          "trailing_diamond": "\ue0b4",
+          "type": "time"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "type": "newline"
+    },
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#94D8E5",
+          "style": "plain",
+          "template": " λ ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}

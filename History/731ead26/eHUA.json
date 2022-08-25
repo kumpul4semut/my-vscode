@@ -1,0 +1,15 @@
+{
+    "Microsoft.PowerShell:ExecutionPolicy": "RemoteSigned",
+    "profiles": {
+        "defaults": {
+            "font": {
+                "face": "CaskaydiaCove Nerd Font",
+                "size": 10
+            },
+            "padding": "4, 2",
+            "useAcrylic": false,
+            "acrylicOpacity": 0.8,
+            "scrollbarState": "hidden"
+        }
+    }
+}

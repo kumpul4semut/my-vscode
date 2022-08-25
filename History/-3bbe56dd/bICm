@@ -1,0 +1,16 @@
+uploads/*
+storage
+vendor
+application/vendor/*
+application/cache/*
+application/ci_sessions/*
+application/logs/*
+.DS_Store
+application/.DS_Store
+assets/.DS_Store
+assets/bower_components/.DS_Store
+assets/bower_components/fontawesome/.DS_Store
+assets/bower_components/fontawesome/js-packages/.DS_Store
+assets/bower_components/fontawesome/js-packages/@fortawesome/.DS_Store
+assets/bower_components/fontawesome/svgs/.DS_Store
+/config.php

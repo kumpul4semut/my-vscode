@@ -1,0 +1,64 @@
+{
+    "telemetry.machineId": "0ad4f007fff2ec798b5854eeeabfbf083d5c6219083ebd23b878722897845eb9",
+    "theme": "vs-dark",
+    "themeBackground": "#212121",
+    "windowSplash": {
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#eeffff",
+            "background": "#212121",
+            "editorBackground": "#212121",
+            "titleBarBackground": "#212121",
+            "activityBarBackground": "#212121",
+            "sideBarBackground": "#212121",
+            "statusBarBackground": "#212121",
+            "statusBarNoFolderBackground": "#212121"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 30,
+            "activityBarWidth": 48,
+            "sideBarWidth": 170,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///c%3A/laragon/www/drm",
+            "backupPath": "C:\\Users\\USER\\AppData\\Roaming\\Code\\Backups\\a0b81dc66f76198ad622b2ee8f2c2a07",
+            "uiState": {
+                "mode": 0,
+                "x": 448,
+                "y": 156,
+                "width": 1024,
+                "height": 768
+            }
+        },
+        "openedWindows": [
+            {
+                "folder": "file:///c%3A/laragon/www/drm",
+                "backupPath": "C:\\Users\\USER\\AppData\\Roaming\\Code\\Backups\\a0b81dc66f76198ad622b2ee8f2c2a07",
+                "uiState": {
+                    "mode": 0,
+                    "x": 448,
+                    "y": 156,
+                    "width": 1024,
+                    "height": 768
+                }
+            },
+            {
+                "folder": "file:///c%3A/laragon/www/azzana",
+                "backupPath": "C:\\Users\\USER\\AppData\\Roaming\\Code\\Backups\\44af536cf1e97cae4866c9d794cef4f9",
+                "uiState": {
+                    "mode": 0,
+                    "x": 448,
+                    "y": 156,
+                    "width": 1024,
+                    "height": 768
+                }
+            }
+        ]
+    }
+}
