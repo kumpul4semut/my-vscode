@@ -1,1 +1,0 @@
-Set-Alias ll ls
