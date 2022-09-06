@@ -3,5 +3,9 @@
     {
         "key": "ctrl+n", // "cmd+n" on mac
         "command": "extension.advancedNewFile",
-    }
+    },
+    { 
+        "key": "ctrl+m",  
+        "command": "wwm.aligncode",
+        "when": "editorTextFocus && !editorReadonly" }
 ]

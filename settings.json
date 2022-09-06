@@ -9,7 +9,6 @@
     "window.zoomLevel": 1,
     "editor.fontSize": 18,
     "editor.fontFamily": "'Hack NF', 'Source Code Pro',Consolas, 'Courier New', monospace",
-    "php.suggest.basic": false,
     "terminal.explorerKind": "external",
     "emmet.syntaxProfiles": {
         "php": "html",
@@ -18,5 +17,15 @@
     "emmet.includeLanguages": {
         "php": "html",
         "blade": "html"
+    },
+    "php.validate.executablePath": "",
+    "php.suggest.basic": false,
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }
